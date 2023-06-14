@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio en pruebas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://kit.fontawesome.com/e9adaab902.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="container_fondo">
+
+
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="fade-in">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+        <div class="overlay-content">
+          <a class="estilos_nav" href="#Inicio"><i class="fas fa-home"></i> Inicio</a>
+          <a class="estilos_nav" href="#Conocimientos"><i class="fas fa-book"></i> Conocimientos</a>
+          <a class="estilos_nav" href="#Habilidades"><i class="fas fa-chart-bar"></i> Habilidades</a>
+          <a class="estilos_nav" href="#Experiencia"><i class="fas fa-briefcase"></i> Experiencia</a>
+          <a class="estilos_nav" href="#Aptitudes"><i class="fas fa-star"></i> Aptitudes</a>
+          <a class="estilos_nav" href="#Contacto"><i class="fas fa-envelope"></i> Contacto</a>
+        </div>
+      </div>
+      <span id="openNav">&#9776;</span>
+    </header>
+    
+
+
+    <!-- INICIO -->
+    <section id="Inicio" class="container_inicio fade-in">
+
+      <div class="left_content">
+        <h1>Ignacio Sahelices <br> <span class="auto-type"></span></h1>
+        <p>Desarrollador front-end dedicado a la creación de sitios web atractivos, <br> funcionales y de alto
+          rendimiento.</p>
+
+        <div class="contact_button">
+          <button class="contact_button1" onclick="scrollToContact()">Contáctame</button>
+          <a href="https://drive.google.com/uc?export=download&id=16v0YVHGX9W78LvQKnXd5BH-a2QUmOSUU" download>
+            <button class="contact_button2">Descargar CV &#8599</button>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+    <!-- CARDS -->
+    <section id="Conocimientos" class="container fade-in fade-in-cards">
+      <div class="titulo-conocimientos fade-in">
+        <h2><span>CONOCIMIENTOS</span></h2>
+      </div>
+      <div class="card fade-in">
+        <div class="face face1">
+          <div class="content">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programación</h3>
+          </div>
+          <button class="more-btn">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p> A través del curso "The Complete 2022 Web Development Bootcamp" de Udemy, se han adquirido habilidades
+              en programación. Se dominaron los lenguajes de programación más utilizados, así como los fundamentos del
+              desarrollo web. Se está capacitado para crear sitios web atractivos y funcionales,
+              con un enfoque en la experiencia del usuario y la optimización para motores de búsqueda.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <div class="face face1">
+          <div class="content">
+            <i class="fas fa-chart-line"></i>
+            <h3>SEO</h3>
+          </div>
+          <button class="more-btn">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p> Se poseen conocimientos básicos en SEO (Search Engine Optimization), lo cual permite optimizar sitios
+              web para obtener una mejor visibilidad en los motores de búsqueda. Se entiende la importancia de palabras
+              clave, metaetiquetas y enlaces relevantes para mejorar el posicionamiento orgánico.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <div class="face face1">
+          <div class="content">
+            <i class="fas fa-rocket"></i>
+            <h3>SEM</h3>
+          </div>
+          <button class="more-btn">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p> Conocimientos en SEM (Search Engine Marketing), una estrategia
+              de publicidad en línea que utiliza anuncios pagados para aumentar la visibilidad en los motores de
+              búsqueda. A través del uso de campañas PPC (pago por clic) y otras tácticas de marketing en buscadores, se
+              puede ayudar a las empresas a alcanzar sus objetivos de marketing de manera efectiva.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <div class="face face1">
+          <div class="content">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>ADE</h3>
+          </div>
+          <button class="more-btn">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p> Graduado la Universidad de Extremadura, la educación académica proporcionó los conocimientos necesarios
+              para comprender los principios fundamentales del mundo empresarial y desarrollar estrategias efectivas
+              para el éxito organizacional. Con una base sólida en economía y gestión, se está preparado para enfrentar
+              los desafíos del entorno empresarial actual.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <div class="face face1">
+          <div class="content">
+            <i class="fa-solid fa-paintbrush"></i>
+            <h3>UI/UX</h3>
+          </div>
+          <button class="more-btn">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p> Creación de interfaces atractivas y funcionales que brinden una experiencia óptima al usuario. A través
+              del
+              uso de principios de diseño centrados en el usuario, como la usabilidad y la accesibilidad, se puede
+              asegurar que los sitios web y las aplicaciones sean intuitivos y satisfactorios de usar. Además, se
+              aplican técnicas de SEO y SEM de forma sutil para maximizar el impacto en línea.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <div class="face face1">
+          <div class="content">
+            <i class="fa-regular fa-lightbulb"></i>
+            <h3>Marketing</h3>
+          </div>
+          <button class="more-btn">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p> Conocimiento integral de estrategias y tácticas para promover una marca en el entorno digital. A través
+              de un enfoque integrado, se combinan técnicas de SEO, SEM y UI/UX para crear campañas de marketing
+              efectivas. Hay una pasión por la creación de contenido atractivo, la gestión de redes sociales y la
+              generación de leads para impulsar el crecimiento y la visibilidad de una empresa en línea.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HABILIDADES -->
+    <section id="Habilidades" class="habilidades fade-in">
+      <div class="titulo-habilidades">
+        <h2><span>HABILIDADES</span></h2>
+      </div>
+      <div class="galeria fade-in">
+        <div class="fade-in" style="background-image: url(images/HTML.png);"></div>
+        <div class="fade-in" style="background-image: url(images/CSS.png);"></div>
+        <div class="fade-in special" style="background-image: url(images/javascript.png);"></div>
+        <div class="fade-in special" style="background-image: url(images/react-js.png);"></div>
+        <div class="fade-in" style="background-image: url(images/git-logo_7.webp);"></div>
+        <div class="fade-in special galeria_git" style="background-image: url(images/github_11.png);"></div>
+        <div class="fade-in" style="background-image: url(images/node_9.png);"></div>
+        <div class="fade-in" style="background-image: url(images/mongo_7.png);"></div>
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCIA -->
+
+    <section id="Experiencia" class="experiencia fade-in">
+      <div class="titulo-experiencia">
+        <h2><span>EXPERIENCIA</span></h2>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card-top">
+          <img class="image image_accenture" src="images/accenture_2.png">
+          <div class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <h3 class="modal-title">Analista de datos</h3>
+              <p>Manejo, análisis e interpretación de datos en plataforma digital para clientes multinacionales, 
+                con el objetivo 
+                clave de mejorar la experiencia del usuario.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <span class="top-text">Analista de Datos</span><br>
+          <span class="bottom-text">Manejo, análisis e interpretación <br> de datos en plataforma digital para clientes multinacionales, 
+            con el objetivo 
+            clave de mejorar la experiencia del usuario.
+          </span>
+          <br>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div class="card-top">
+          <img class="image" src="images/TELEPERFORMANCE.jpg">
+          <div class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <h3 class="modal-title">Soporte técnico</h3>
+              <p>Atención al cliente vía telefónica y vía chat, gestión y envío de facturas, retenciones, 
+                ventas y asistencia con productos de Adobe.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-bottom tarjeta">
+          <span class="top-text">Soperte Técnico</span><br>
+          <span class="bottom-text">Atención al cliente vía telefónica y vía chat, gestión y envío de facturas, retenciones, 
+            ventas y asistencia con productos de Adobe.
+          </span>
+          <br>
+
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card-top">
+          <img class="image" src="images/Metodo-SRD_Logo_VVertical.jpg">
+          <div class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <h3 class="modal-title">Gestión de proyectos</h3>
+              <p>Experiencia laboral en gestión de proyectos enfocada en redes sociales, marketing y búsqueda de clientes, 
+                con el objetivo de optimizar la experiencia del usuario en plataformas digitales para clientes multinacionales</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <span class="top-text">Gestión de Proyectos</span><br>
+          <span class="bottom-text">Experiencia laboral en gestión de proyectos enfocada en redes sociales, marketing y búsqueda de clientes, 
+            con el objetivo de optimizar la experiencia del usuario en plataformas digitales para clientes multinacionales.
+          </span>
+          <br>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- APTITUDES -->
+    <section id="Aptitudes" class="skills-section fade-in">
+      <h2><span>APTITUDES</span></h2>
+      <div class="skills-container">
+        <div class="left-skills">
+          <div class="skill fade-in">
+            <span class="skill-name">Trabajo en equipo</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="skill fade-in">
+            <span class="skill-name">Inglés</span>
+            <div class="skill-bar">
+              <div class="skill-level " style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="skill fade-in">
+            <span class="skill-name">Creatividad</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 100%;"></div>
+            </div>
+          </div>
+          <!-- Agrega más habilidades aquí -->
+        </div>
+        <div class="right-skills">
+          <div class="skill fade-in">
+            <span class="skill-name">Resolución de problemas</span>
+            <div class="skill-bar">
+              <div class="skill-level skill-animate skill-animate-start" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="skill fade-in">
+            <span class="skill-name">Portugués</span>
+            <div class="skill-bar">
+              <div class="skill-level skill-animate skill-animate-start" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="skill fade-in">
+            <span class="skill-name">Excell</span>
+            <div class="skill-bar">
+              <div class="skill-level skill-animate skill-animate-start" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="Contacto">
+      <h2><span>Contacto</span></h2>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <ul>
+        <li><a href="mailto:ignaciosahelices@gmail.com" target="_blank" title="Correo: ignaciosahelices@gmail.com"><i
+              class="fa fa-envelope"></i></a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=658354763" target="_blank" title="WhatsApp: 658354763"><i
+              class="fa fa-whatsapp"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ignacio-sahelices-1a842a189/" target="_blank"><i
+              class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/IgnacioSahelices" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </footer>
+    <div class="footer-copyright">
+      <p>&copy; Ignacio Sahelices <span id="year"></span></p>
+    </div>
+  </div>
+  <a href="#inicio" id="btn-arriba"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="index.js" charset="UTF-8"></script>
+</body>
+
+</html>
