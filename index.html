@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio en pruebas</title>
+  <title>Ignacio Sahelices</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="https://kit.fontawesome.com/e9adaab902.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -35,10 +34,10 @@
 
     <!-- NAVBAR -->
     <header class="fade-in">
-      <div id="myNav" class="overlay">
+      <div id="myNav" class="overlay header-content">
         <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
         <div class="overlay-content">
-          <a class="estilos_nav" href="#Inicio"><i class="fas fa-home"></i> Inicio</a>
+          <a class="estilos_nav" href="#"><i class="fas fa-home"></i> Inicio</a>
           <a class="estilos_nav" href="#Conocimientos"><i class="fas fa-book"></i> Conocimientos</a>
           <a class="estilos_nav" href="#Habilidades"><i class="fas fa-chart-bar"></i> Habilidades</a>
           <a class="estilos_nav" href="#Experiencia"><i class="fas fa-briefcase"></i> Experiencia</a>
@@ -61,7 +60,7 @@
 
         <div class="contact_button">
           <button class="contact_button1" onclick="scrollToContact()">Contáctame</button>
-          <a href="https://drive.google.com/uc?export=download&id=16v0YVHGX9W78LvQKnXd5BH-a2QUmOSUU" download>
+          <a href="https://drive.google.com/uc?export=download&id=128cRUSpQUfATvApH_zJYf-gz1MhXLgF4" download>
             <button class="contact_button2">Descargar CV &#8599</button>
           </a>
           
@@ -218,62 +217,52 @@
       <div class="titulo-experiencia">
         <h2><span>EXPERIENCIA</span></h2>
       </div>
-
+    
       <div class="card-wrapper">
         <div class="card-top">
-          <img class="image image_accenture" src="images/accenture_2.png">
-          <div class="modal">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-              <h3 class="modal-title">Analista de datos</h3>
-              <p>Manejo, análisis e interpretación de datos en plataforma digital para clientes multinacionales, 
-                con el objetivo 
-                clave de mejorar la experiencia del usuario.</p>
-            </div>
-          </div>
+          <img class="image image_accenture" src="images/accenture_2.png" data-target="0">
         </div>
         <div class="card-bottom">
           <span class="top-text">Analista de Datos</span><br>
           <span class="bottom-text">Manejo, análisis e interpretación <br> de datos en plataforma digital para clientes multinacionales, 
-            con el objetivo 
-            clave de mejorar la experiencia del usuario.
+            con el objetivo clave de mejorar la experiencia del usuario.
           </span>
           <br>
         </div>
       </div>
+      <div class="modal" id="modal0">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <h3 class="modal-title">Analista de datos</h3>
+          <p>Manejo, análisis e interpretación de datos en plataforma digital para clientes multinacionales, 
+            con el objetivo clave de mejorar la experiencia del usuario.</p>
+        </div>
+      </div>
+    
       <div class="card-wrapper">
         <div class="card-top">
-          <img class="image" src="images/TELEPERFORMANCE.jpg">
-          <div class="modal">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-              <h3 class="modal-title">Soporte técnico</h3>
-              <p>Atención al cliente vía telefónica y vía chat, gestión y envío de facturas, retenciones, 
-                ventas y asistencia con productos de Adobe.</p>
-            </div>
-          </div>
+          <img class="image" src="images/TELEPERFORMANCE.jpg" data-target="1">
         </div>
         <div class="card-bottom tarjeta">
-          <span class="top-text">Soperte Técnico</span><br>
+          <span class="top-text">Soporte Técnico</span><br>
           <span class="bottom-text">Atención al cliente vía telefónica y vía chat, gestión y envío de facturas, retenciones, 
             ventas y asistencia con productos de Adobe.
           </span>
           <br>
-
         </div>
       </div>
-
+      <div class="modal" id="modal1">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <h3 class="modal-title">Soporte técnico</h3>
+          <p>Atención al cliente vía telefónica y vía chat, gestión y envío de facturas, retenciones, 
+            ventas y asistencia con productos de Adobe.</p>
+        </div>
+      </div>
+    
       <div class="card-wrapper">
         <div class="card-top">
-          <img class="image" src="images/Metodo-SRD_Logo_VVertical.jpg">
-          <div class="modal">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-              <h3 class="modal-title">Gestión de proyectos</h3>
-              <p>Experiencia laboral en gestión de proyectos enfocada en redes sociales, marketing y búsqueda de clientes, 
-                con el objetivo de optimizar la experiencia del usuario en plataformas digitales para clientes multinacionales</p>
-            </div>
-          </div>
+          <img class="image" src="images/Metodo-SRD_Logo_VVertical.jpg" data-target="2">
         </div>
         <div class="card-bottom">
           <span class="top-text">Gestión de Proyectos</span><br>
@@ -281,11 +270,19 @@
             con el objetivo de optimizar la experiencia del usuario en plataformas digitales para clientes multinacionales.
           </span>
           <br>
-
         </div>
       </div>
-
+      <div class="modal" id="modal2">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <h3 class="modal-title">Gestión de proyectos</h3>
+          <p>Experiencia laboral en gestión de proyectos enfocada en redes sociales, marketing y búsqueda de clientes, 
+            con el objetivo de optimizar la experiencia del usuario en plataformas digitales para clientes multinacionales</p>
+        </div>
+      </div>
     </section>
+    
+
     <!-- APTITUDES -->
     <section id="Aptitudes" class="skills-section fade-in">
       <h2><span>APTITUDES</span></h2>
@@ -310,7 +307,7 @@
               <div class="skill-level" style="width: 100%;"></div>
             </div>
           </div>
-          <!-- Agrega más habilidades aquí -->
+         
         </div>
         <div class="right-skills">
           <div class="skill fade-in">
@@ -356,6 +353,7 @@
     </div>
   </div>
   <a href="#inicio" id="btn-arriba"><i class="fas fa-arrow-up"></i></a>
+  
 
   <script src="index.js" charset="UTF-8"></script>
 </body>

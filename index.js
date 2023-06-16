@@ -20,22 +20,21 @@ function scrollToContact() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("active");
-          observer.unobserve(entry.target); // Dejar de observar el elemento después de que aparece
+          observer.unobserve(entry.target); 
         }
       });
     }
     
-    // Crear una instancia del Intersection Observer
+   
     const options = {
-      threshold: 0.4, // Porcentaje de visibilidad requerido para activar la animación (ajusta según tus necesidades)
+      threshold: 0.4, 
     };
     
     const observer = new IntersectionObserver(handleElementAppear, options);
     
-    // Obtener todos los elementos a animar
     const elements = document.querySelectorAll(".fade-in");
     
-    // Observar cada elemento
+    
     elements.forEach((element) => {
       observer.observe(element);
     });
@@ -53,10 +52,10 @@ btnArriba.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
-  // Calcula la mitad de la altura de la ventana visible
+  
   const halfViewportHeight = window.innerHeight / 2;
 
-  // Si la posición del scroll supera la mitad de la altura de la ventana visible, muestra el botón, de lo contrario, ocúltalo
+  
   if (scrollPosition > halfViewportHeight) {
     btnArriba.style.display = "block";
   } else {
@@ -64,11 +63,27 @@ window.addEventListener("scroll", () => {
   }
 });
 function openNav() {
-  document.getElementById("myNav").style.width = "60%";
+  var myNav = document.getElementById("myNav");
+  
+  // Solo aplicar si estamos en un dispositivo móvil
+  if (window.innerWidth <= 760) {
+    myNav.style.width = "60%";
+  } else {
+    // Si estamos en un dispositivo de escritorio, mantenemos el ancho normal
+    myNav.style.width = "100%";  
+  }
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  var myNav = document.getElementById("myNav");
+  
+  // Solo aplicar si estamos en un dispositivo móvil
+  if (window.innerWidth <= 760) {
+    myNav.style.width = "0%";
+  } else {
+    // Si estamos en un dispositivo de escritorio, mantenemos el ancho normal
+    myNav.style.width = "100%";  
+  }
 }
 
 document.getElementById("openNav").addEventListener('click', openNav);
@@ -110,10 +125,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-
 document.addEventListener('DOMContentLoaded', function() {
-  var cards = document.querySelectorAll('.card-wrapper');
-  var modals = document.querySelectorAll('.card-wrapper .modal');
+  var images = document.querySelectorAll('.card-top img');
+  var modals = document.querySelectorAll('.modal');
   var body = document.body;
 
   // Cerrar todos los modales abiertos
@@ -123,19 +137,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  for (var i = 0; i < cards.length; i++) {
-    var card = cards[i];
+  // Asegurarse de que todos los modales están inicialmente ocultos
+  closeModals();
+
+  for (var i = 0; i < images.length; i++) {
+    var image = images[i];
     var modal = modals[i];
 
-    card.addEventListener('click', function(event) {
-      event.preventDefault();
-      var currentModal = this.querySelector('.modal');
-      var modalContent = currentModal.querySelector('.modal-content');
+    image.addEventListener('click', function(event) {
+      event.stopPropagation();
+      var currentModal = this.dataset.target;
+      var modalContent = document.querySelector('#modal' + currentModal + ' .modal-content');
       modalContent.style.height = modalContent.scrollHeight + 'px';
 
       closeModals();
 
-      currentModal.style.display = 'block';
+      document.querySelector('#modal' + currentModal).style.display = 'block';
       body.classList.add('modal-open');
     });
 
@@ -151,13 +168,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+
+
 window.onload = function() {
   var openNav = document.getElementById('openNav');
   var myNav = document.getElementById('myNav');
   var closeNav = document.getElementById('closeNav');
 
   // Verificar si estamos en un dispositivo móvil
-  if (window.innerWidth <= 760) {  // Ajusta este valor según tu criterio de qué constituye un dispositivo móvil
+  if (window.innerWidth <= 760) {  
     openNav.addEventListener('click', function() {
       // Ocultar el openNav cuando se abre el navbar
       openNav.style.display = 'none';

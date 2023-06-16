@@ -150,14 +150,28 @@ body {
 }
 
 /* codigo navbar */
-nav {
-  padding-top: 19px;
-  width: 70vw;
+.header-content {
+  position: fixed;
+  background-color: #1c1c20;
+  height: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#myNav {
+  
+  
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   margin: auto;
+
 }
 
 .estilos_nav {
@@ -280,7 +294,7 @@ span {
 }
 
 
-/* estilos cards */
+/* ESTILOS CONOCIMIENTOS */
 .more-btn {
   display: none;
   background: none;
@@ -289,13 +303,13 @@ span {
   font-size: 2em;
   cursor: pointer;
   position: absolute;
-  /* Para que el botón se muestre debajo de face1 */
+  
   bottom: 0;
-  /* Posición en el borde inferior */
+ 
   left: 50%;
-  /* Centrado horizontalmente */
+  
   transform: translateX(-50%);
-  /* Asegurarse de que está centrado */
+  
 }
 
 .container {
@@ -335,7 +349,7 @@ span {
   width: 100%;
   height: 2px;
   background-color: #bac2c6;
-  /* Color de la línea */
+  
 }
 
 
@@ -474,7 +488,7 @@ span {
   width: 100%;
   height: 2px;
   background-color: #bac2c6;
-  /* Color de la línea */
+  
 }
 
 .galeria {
@@ -491,9 +505,7 @@ span {
 .galeria>div {
   flex: 1;
   width: 50rem;
-  /* Ajusta el ancho de las imágenes según tus necesidades */
   height: 14rem;
-  /* Ajusta la altura de las imágenes según tus necesidades */
   object-fit: cover;
   border: 3px solid #4a8dba;
   border-radius: 1rem;
@@ -524,17 +536,14 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* Agregar flex-wrap para que las imágenes no se desplacen a una columna */
   gap: 2rem;
 }
 
 .titulo-experiencia {
   width: 100%;
-  /* Ajustar el ancho para que ocupe todo el contenedor */
   text-align: center;
   margin-top: 50px;
   margin-bottom: 100px;
-  /* Ajustar el espaciado inferior */
 }
 
 .titulo-experiencia h2 {
@@ -557,10 +566,7 @@ span {
   width: 100%;
   height: 2px;
   background-color: #bac2c6;
-  /* Color de la línea */
 }
-
-
 
 .image {
   width: 100%;
@@ -665,7 +671,6 @@ span {
   width: 100%;
   height: 2px;
   background-color: #bac2c6;
-  /* Color de la línea */
 }
 
 .skills-container {
@@ -674,7 +679,7 @@ span {
   gap: 20px;
   display: flex;
   justify-content: space-around;
-
+  align-items: stretch;
 }
 
 .left-skills,
@@ -702,91 +707,17 @@ span {
 .skill-level {
   height: 100%;
   background-color: #4a8dba;
-  /* Cambia este color según tu preferencia */
-  animation: skill-grow 2.5s linear;
+ 
+  
   transform-origin: left;
-  /* Para que la línea crezca de derecha a izquierda */
+ 
 }
 
 .right-skills .skill-bar {
   transform: scaleX(-1);
-  /* Voltea horizontalmente las barras de habilidad en right-skills */
+  
 }
 
-.right-skills .skill:nth-child(1) .skill-level {
-  animation: skill-grow-100 2s ease-in-out;
-}
-
-.right-skills .skill:nth-child(2) .skill-level {
-  animation: skill-grow-60 2s ease-in-out;
-}
-
-.right-skills .skill:nth-child(3) .skill-level {
-  animation: skill-grow-60 2s ease-in-out;
-}
-
-@keyframes skill-grow-90 {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 90%;
-  }
-}
-
-@keyframes skill-grow-70 {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 70%;
-  }
-}
-
-.left-skills .skill:nth-child(1) .skill-level {
-  animation: skill-grow-100 2s ease-in-out;
-}
-
-.left-skills .skill:nth-child(2) .skill-level {
-  animation: skill-grow-70 2s ease-in-out;
-}
-
-.left-skills .skill:nth-child(3) .skill-level {
-  animation: skill-grow-80 2s ease-in-out;
-}
-
-
-@keyframes skill-grow-80 {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 80%;
-  }
-}
-
-@keyframes skill-grow-60 {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 60%;
-  }
-}
-
-@keyframes skill-grow-100 {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
 
 /* FOOTER */
 
@@ -805,7 +736,6 @@ footer h2 {
   color: #bac2c6;
   font-size: 40px;
   margin-bottom: 100px;
-  /* Ajusta el valor según el espacio deseado */
   position: absolute;
   top: 0;
   left: 50%;
@@ -828,7 +758,6 @@ footer h2 span::after {
   width: 100%;
   height: 2px;
   background-color: #bac2c6;
-  /* Color de la línea */
 }
 
 
@@ -999,7 +928,10 @@ footer ul li a:hover::before {
     text-align: left;
     margin-top: 0;
   }
-
+.header-content {
+  display: none;
+  
+}
   .estilos_nav {
     position: relative;
     display: inline-block;
@@ -1054,28 +986,24 @@ footer ul li a:hover::before {
   .container .card {
   margin-top: 50px;
   width: 100%;
-  display: flex; /* Hacemos que .card sea un contenedor flex */
-  flex-direction: column; /* Los elementos hijos de .card se apilan verticalmente */
-  align-items: center; /* Centramos los elementos hijos de .card horizontalmente */
-  justify-content: center; /* Centramos los elementos hijos de .card verticalmente */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
 }
 
   .container .card .face {
-    
     height: 200px;
-
   }
 
   .container .card .face.face1 {
     position: relative;
     z-index: 1;
-    /* Este valor es mayor para asegurar que face1 siempre esté encima de face2 */
   }
 
   .container .card .face.face2 {
     position: relative;
     visibility: hidden;
-    /* Este valor es mayor para asegurar que face1 siempre esté encima de face2 */
   }
 
   .container .card:hover .face.face1 {
@@ -1092,10 +1020,6 @@ footer ul li a:hover::before {
     transition: none !important;
   }
 
-
-
-
-  /* En lugar de usar :hover para mostrar face2, vamos a usar una clase específica */
   .container .card.show-face2 .face.face1 {
     transform: translateY(-100%);
   }
@@ -1104,20 +1028,18 @@ footer ul li a:hover::before {
     opacity: 1;
     transform: translateY(0);
   }
-
-
-
   .container .card .face.face1 .more-btn {
     display: block;
   }
+
+
   /* RESPONSIVE HABILIDADESSS */
+
   .titulo-habilidades h2 span {
     font-size: 30px;
   }
   .galeria {
     flex-direction: row;
-    
-   
 }
 
 .galeria>div:not(.special) {
@@ -1126,7 +1048,6 @@ footer ul li a:hover::before {
   height: 30vw;
   object-fit: cover;
   border-radius: 50%;
- 
   background-size: cover; 
   background-position: center;
 }
@@ -1161,9 +1082,9 @@ footer ul li a:hover::before {
 }
 
 .card-wrapper {
-  width: 100%; /* Ajustar el ancho de las tarjetas para ocupar el 90% del ancho de la pantalla */
-  height: auto; /* Cambiar la altura de las tarjetas a automático */
-  margin-bottom: 20px; /* Reducir el margen inferior de las tarjetas */
+  width: 100%; 
+  height: auto; 
+  margin-bottom: 20px; 
   margin-top: 0px;
   box-shadow: none;
   background-color: transparent;
@@ -1173,8 +1094,8 @@ footer ul li a:hover::before {
 }
 
 .card-top {
-  width: 40%; /* Ajustar el ancho del contenedor de la imagen */
-  height: auto; /* Cambiar la altura del contenedor de la imagen a automático */
+  width: 40%; 
+  height: auto; 
   display: flex;
     justify-content: center;
     align-items: center;
@@ -1185,11 +1106,12 @@ footer ul li a:hover::before {
   height: 100%;
   border-radius: 10%;
   object-fit: cover;
-  pointer-events: none;
+transition: none;
+box-shadow: none;
 }
 
 .card-bottom {
- display: none; /* Remover color de fondo */
+ display: none; 
 }
 .card-wrapper:hover .image {
   filter: none;
@@ -1208,7 +1130,7 @@ footer ul li a:hover::before {
   transition: none;
   background-color: transparent;
 }
-.card-wrapper .modal {
+.modal {
   display: none;
   position: fixed;
   z-index: 9999;
@@ -1219,27 +1141,29 @@ footer ul li a:hover::before {
   background-color: #333;
   color: #4a8dba;
 }
+
 body.modal-open {
   overflow: hidden;
 }
 
-
-.card-wrapper .modal-content {
+.modal-content {
   position: relative;
+  z-index: 9999;
   margin: 10% auto;
   padding: 20px;
   max-width: 90%;
   background-color: #333;
   color: #4a8dba;
   text-align: center;
+  font-size: 20px;
 }
 
-.card-wrapper .modal-title {
-  font-size: 20px;
+.modal-title {
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
-.card-wrapper .close {
+.close {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -1249,13 +1173,23 @@ body.modal-open {
   cursor: pointer;
 }
 
-.card-wrapper .close:hover,
-.card-wrapper .close:focus {
+.close:hover,
+.close:focus {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
+
 /* RESPOSNIVE APTITUDES */
+.skills-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.left-skills, .right-skills {
+  width: 90%;
+}
 .skills-section h2 span {
   font-size: 30px;
 }
@@ -1277,14 +1211,13 @@ footer::before {
 
 
 #openNav {
+  
   position: fixed;
   display: block;
   font-size: 30px;
   cursor: pointer;
   top: 15px;
-  /* Ajusta según necesites */
   left: 15px;
-  /* Ajusta según necesites */
   z-index: 9999;
 }
 
