@@ -1,5 +1,5 @@
 var typed = new Typed(".auto-type", {
-    strings: ["Frontend", "Marketing", "WebDev"],
+    strings: ["QA Tester", "SeleniumBase", "Frontend", "Marketing", "WebDev"],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true
